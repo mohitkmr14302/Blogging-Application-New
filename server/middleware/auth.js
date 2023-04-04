@@ -6,7 +6,7 @@ import profile from '../schema/profile-schema.js';
 
 const auth = async (req, res, next) => {
     try {
-
+        
         const token = req.cookies['jwt'];
         // console.log("The token is", token) //it shows undefined
         const verifyuser = jwt.verify(token, process.env.SECRET_KEY);
