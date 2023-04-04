@@ -1,5 +1,8 @@
 import axios from 'axios';
-const URL = "http://localhost:8000"
+
+// const URL = "http://localhost:8000"
+const URL = "https://blogbackend-0cl9.onrender.com"
+
 export const createpost = async (post) => {
 
     try {

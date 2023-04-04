@@ -3,7 +3,7 @@ import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
 let gfs;
-const url = 'https://nitablog.herokuapp.com/';
+const url = 'https://blogbackend-0cl9.onrender.com';
 const conn = mongoose.connection;
 conn.once('open', () => {
   gfs = grid(conn.db, mongoose.mongo);
