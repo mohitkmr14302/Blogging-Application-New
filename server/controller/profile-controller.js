@@ -20,6 +20,7 @@ export const saveprofile = async (req, res) => {
 export const loginprofile = async (req, res) => {
     try {
         let profile = await Profile.find({ email: req.params.email });
+        
         const token = await profile[0].generateAuthToken();
         res.cookie('jwt', token, {
             expires: new Date(Date.now() + 9999999), httpOnly: false,
