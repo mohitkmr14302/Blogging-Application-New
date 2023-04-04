@@ -25,7 +25,7 @@ export const loginprofile = async (req, res) => {
         res.cookie('jwt', token, {
             expires: new Date(Date.now() + 9999999), 
             httpOnly: true,
-            // SameSite: None
+            SameSite: None
         })
         res.status(200).json(profile);
         const token1 = req.cookies['jwt'];
