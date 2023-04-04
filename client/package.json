@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://blogbackend-0cl9.onrender.com",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@hookform/resolvers": "^2.8.2",
