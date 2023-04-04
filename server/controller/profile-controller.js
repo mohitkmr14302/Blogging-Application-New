@@ -23,7 +23,8 @@ export const loginprofile = async (req, res) => {
         
         const token = await profile[0].generateAuthToken();
         res.cookie('jwt', token, {
-            expires: new Date(Date.now() + 9999999), httpOnly: false,
+            expires: new Date(Date.now() + 9999999), 
+            // httpOnly: false,
         })
         res.status(200).json(profile);
         const token1 = req.cookies['jwt'];
